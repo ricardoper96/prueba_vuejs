@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="bg-[#24292E] lg:h-[140vh] md:h-[300vh] sm:h-[300vh]">
+    <NavbarMolecula></NavbarMolecula>
+    <MainContent></MainContent>
+  </div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import NavbarMolecula from "@/components/Molecules/Navbar.vue";
+import MainContent from "@/components/Organisms/MainContent/MainContent.vue";
+
+
+
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    MainContent,
+    NavbarMolecula
+
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
